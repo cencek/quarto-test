@@ -1,0 +1,18 @@
+---
+title: "Demo"
+format:
+  html:
+    theme: yeti
+---
+
+```{r echo = FALSE}
+
+library(plotly)
+library(ggplot2)
+
+sample <- ggplot2::ggplot(data = mtcars, aes(x=cyl, y=disp)) + geom_point(aes(color = factor(cyl)))
+
+sample
+
+```
+
